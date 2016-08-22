@@ -1,22 +1,184 @@
 ---
 layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+---  
+<a id="top"></a>
+<div class="main-container transition--fade">
+    <section class="imagebg videobg height-100" data-overlay="5">
+        <div class="youtube-background" data-video-url="JyNIJ8U03I0" data-start-at="0"></div>
+        <div class="background-image-holder">
+            <img alt="image" src="assets/images/hero27.jpg" />
+        </div>
+        <div class="container pos-vertical-center">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <p class="lead">
+                        We are a Nevada based web development company specializing in..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div id="portfolio"></div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h3>Our Work</h3>
+                    <p class="lead">
+                        Our diverse team comprises talent from a range of design disciplines working together to deliver effective solutions
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="masonry-contained">
+        <div class="container">
+            <div class="row">
+                <div class="masonry">
+                    <div class="masonry__container masonry--active">
+                    {% for item in site.data.portfolioitems %}
+                        <div class="col-sm-6 col-xs-12 masonry__item" data-masonry-filter="objects">
+                            <div class="hover-element hover-element-1" data-title-position="center,center">
+                                <div class="hover-element__initial">
+                                    <img alt="Pic" src="assets/images/portfolioitems/{{item.images[0]}}" />
+                                </div>
+                                <div class="hover-element__reveal" data-overlay="9">
+                                    <div class="modal-instance">
+                                        <div class="btn-round modal-trigger">
+                                            <i class="icon-File-HorizontalText icon color--primary"></i>
+                                        </div>
+                                        <div class="modal-container">
+                                            <div class="modal-content height--natural">
+                                                <div class="card card-1">
+                                                    <div class="card__image">
+                                                        <div class="slider" data-paging="true">
+                                                            <ul class="slides">
+                                                                <li>
+                                                                    <img alt="Pic" src="assets/images/portfolioitems/{{item.images[0]}}" />
+                                                                </li>
+                                                                <li>
+                                                                    <img alt="Pic" src="assets/images/small5.jpg" />
+                                                                </li>
+                                                                <li>
+                                                                    <img alt="Pic" src="assets/images/small6.jpg" />
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body boxed bg--white">
+                                                        <div class="card__title">
+                                                            <a href="{{item.url}}" target="_blank"><h5>{{item.title}}</h5></a>
+                                                        </div>
+                                                        <span>
+                                                            <em>{{item.description}}</em>
+                                                        </span>
+                                                        <p>
+                                                            {{item.features}}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end of modal-content-->
+                                        </div>
+                                        <!--end of modal-container-->
+                                    </div>
+                                    <!--end of modal instance-->
+                                </div>
+                            </div>
+                            <!--end hover element-->
+                        </div>
+                        <!--end item-->
+                    {% endfor %}
+                    </div>
+                    <!--end masonry container-->
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="feature feature-2">
+                        <div class="feature__title">
+                            <i class="icon icon-Ship"></i>
+                            <h6>New Startups</h6>
+                        </div>
+                        <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature feature-2">
+                        <div class="feature__title">
+                            <i class="icon icon-Fingerprint-2"></i>
+                            <h6>Personal Portfolios</h6>
+                        </div>
+                        <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature feature-2">
+                        <div class="feature__title">
+                            <i class="icon icon-Shop-2"></i>
+                            <h6>Online Storefronts</h6>
+                        </div>
+                        <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+                <!--end of container-->
+    </section>
+    <section class="bg--secondary partners-1 space--sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="slider" data-items="6" data-timing="3000">
+                        <ul class="slides">
+                            <li>
+                                <img alt="img" src="assets/images/partner1.png">
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner2.png">
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner4.png">
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner3.png">
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner5.png">
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner6.png">
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner7.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg--primary space--sm cta cta-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h4>Interested in working with us?</h4>
+                    <a class="btn btn--sm" href="page-contact-form-simple.html">
+                        <span class="btn__text">
+                            Contact Us
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
 </div>

@@ -803,12 +803,7 @@ mr = (function (mr, $, window, document){
                 masonry.addClass('masonry--active');
             });
 
-            masonry.isotope({
-              itemSelector: '.masonry__item',
-              masonry: {
-                columnWidth: '.masonry__item'
-              }
-            });
+            
         });
 
         $('.masonry__filters li').on('click', function(){

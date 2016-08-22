@@ -2,9 +2,12 @@
 The main SCSS file for everything, yep
 */
 
-@import "main";
-@import "font-karlaopensans";
-@import "interface-icons";
-@import "iconsmind";
+@import "bootstrap";
 @import "socicon";
+@import "iconsmind";
+@import "font";
+@import "interface-icons";
+@import "owl.carousel";
+@import "lightbox";
+@import "main";
 @import "syntax-highlighting";

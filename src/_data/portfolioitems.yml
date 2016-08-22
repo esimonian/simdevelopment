@@ -1,0 +1,31 @@
+
+- title: Parveen Kaler
+  url: http://parveenkaler.com/
+  images: [parveen.png]
+  description: A personal page
+  features: 
+- title: Adventures in Teach
+  url: http://www.adventuresinteach.com/
+  images: [adventeach.png]
+  description: A linguists and ESL Blog
+  features: 
+- title: Start Your Tab
+  url: http://startyourtab.com/
+  images: [syt.png]
+  description: Financial advice geared towards millenials
+  features: 
+- title: Redcarpet Lending
+  url: https://www.redcarpetup.com/
+  images: [redcarpet.png]
+  description: India's first student credit card
+  features: 
+- title: Matt Wescott Blog
+  url: https://mattwescott.github.io/
+  images: [mattblog.png]
+  description: A simple science blog
+  features: Features an IPython/Juyptr notebooks converter
+- title: Aure
+  url: http://aure.com/
+  images: [aure.png]
+  description: A personal portfolio built with Jekyl
+  features:  Includes custome build plugins that iterate through hundreds of files and display relvant music files.

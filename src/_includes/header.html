@@ -1,87 +1,67 @@
 <header class="site-header">
-<div class="nav-container">
-        
-        
-    
-        <nav>
-            <div class="container nav-stack">
-                <div class="row">
-                    <div class="nav-stack__upper">
-                        <div class="col-xs-6">
-                            <a href="index.html">
-                                <img alt="logo" class="logo" src="img/logo-large-dark.png">
-                            </a>
+    <div class="loader"></div>
+    <nav class="transition--fade">
+        <div class="nav-bar nav--absolute nav--transparent" data-fixed-at="200">
+            <div class="nav-module logo-module left">
+                <a href="index.html">
+                    <img class="logo logo-dark" alt="logo" src="assets/images/logo-dark.png" />
+                    <img class="logo logo-light" alt="logo" src="assets/images/logo-light.png" />
+                </a>
+            </div>
+            <div class="nav-module menu-module left">
+                <ul class="menu">
+                    <li>
+                        <a href="#top">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--end nav module-->
+            <div class="nav-module right">
+                <a href="#" class="nav-function modal-trigger" data-modal-id="search-form">
+                    <i class="interface-search icon icon--sm"></i>
+                    <span>Search</span>
+                </a>
+            </div>
+        </div>
+        <!--end nav bar-->
+        <div class="nav-mobile-toggle visible-sm visible-xs">
+            <i class="icon-Align-Right icon icon--sm"></i>
+        </div>
+    </nav>
+    <div class="modal-container search-modal" data-modal-id="search-form">
+        <div class="modal-content bg-white imagebg" data-width="100%" data-height="100%">
+            <div class="pos-vertical-center clearfix">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                    <form class="clearfix">
+                        <div class="input-with-icon">
+                            <i class="icon-Magnifi-Glass2 icon icon--sm"></i>
+                            <input type="search" name="query" placeholder="Type your search and hit enter" />
                         </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#purchase-template" class="btn btn--sm btn--square">
-                                <span class="btn__text">
-                                    Purchase Now
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-                
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="nav-bar">
-                            <div class="nav-module logo-module left">
-                                <a href="index.html">
-                                    <img class="logo logo-dark" alt="logo" src="img/logo-dark.png">
-                                    <img class="logo logo-light" alt="logo" src="img/logo-light.png">
-                                </a>
-                            </div>
-                            <div class="nav-module menu-module left">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="#">Single</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dropdown</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Single</a>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="#">Dropdown</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Single</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Multi Column</a>
-                                        <ul class="multi-column">
-                                            <li>
-                                                <ul>
-                                                    <li><span class="multi-column__title">Title</span></li>
-                                                    <li>
-                                                        <a href="#">Single</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <ul>
-                                                    <li><span class="multi-column__title">Title</span></li>
-                                                    <li>
-                                                        <a href="#">Single</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                
-                <div class="nav-mobile-toggle visible-sm visible-xs">
-                    <i class="icon-Align-Right icon icon--sm"></i>
-                </div>
-            </div></div></div></nav>
+            </div>
+        </div>
+        <!--end of modal-content-->
     </div>
-
+    <!--end of modal-container-->
 </header>

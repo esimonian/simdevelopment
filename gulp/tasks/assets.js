@@ -24,9 +24,18 @@ const when = require('gulp-if');
 gulp.task('scripts', () =>
   // NOTE: The order here is important since it's concatenated in order from
   // top to bottom, so you want vendor scripts etc on top
-  gulp.src(
-    'src/assets/javascript/*.js'
-  )
+  gulp.src([
+    'src/assets/javascript/jquery-2.1.4.min.js',
+    'src/assets/javascript/isotope.min.js',
+    'src/assets/javascript/ytplayer.min.js',
+    'src/assets/javascript/owl.carousel.min.js',
+    'src/assets/javascript/lightbox.min.js',
+    'src/assets/javascript/twitterfetcher.min.js',
+    'src/assets/javascript/smooth-scroll.min.js',
+    'src/assets/javascript/scrollreveal.min.js',
+    'src/assets/javascript/parallax.js',
+    'src/assets/javascript/scripts.js'
+  ])
     .pipe(newer('.tmp/assets/javascript/index.js', {dest: '.tmp/assets/javascript', ext: '.js'}))
     .pipe(when(!argv.prod, sourcemaps.init()))
     .pipe(babel({

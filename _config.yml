@@ -2,7 +2,6 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: Simonian Development
 description: Business portfolio
-url: https://esimonian.github.io/
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/src
@@ -15,7 +14,6 @@ exclude: ['assets']
 author:
   name: Elizabeth
   email: simoniandevelopment@gmail.com
-  uri: esimonian.github.io
   bio: Full-stack web developer
   twitter:
   github:
