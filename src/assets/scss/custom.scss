@@ -1,0 +1,6 @@
+.section--overlap:not(:first-child) {
+  padding-top: 0;
+  position: relative;
+  z-index: 2;
+  margin-top: -4.5em;
+}

@@ -3,39 +3,37 @@ layout: default
 ---  
 <a id="top"></a>
 <div class="main-container transition--fade">
-    <section class="imagebg videobg height-100" data-overlay="5">
-        <div class="youtube-background" data-video-url="JyNIJ8U03I0" data-start-at="0"></div>
+    <section class="imagebg height-90 parallax" data-overlay="6">
         <div class="background-image-holder">
-            <img alt="image" src="assets/images/hero27.jpg" />
+            <img alt="pic" src="assets/images/intro-bg.jpg" />
         </div>
         <div class="container pos-vertical-center">
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 text-center">
-                    <p class="lead">
-                        We are a Nevada based web development company specializing in..
+                <div class="col-sm-12 text-center">
+                    <h1 class="h2">Elizabeth Simonian</h1>
+                    <p>
+                        Full-stack Developer
                     </p>
+                    <a class="btn btn--primary inner-link btn--merge" href="https://github.com/esimonian" target="_blank">
+                        <span class="btn__text">
+                            <i class="socicon-github"></i> Github
+                        </span>
+                    </a>
+                    <a class="btn btn--primary inner-link" href="http://www.upwork.com/o/profiles/users/_~0131feccde7cf03681/" target="_blank">
+                        <span class="btn__text">
+                            <i class="icon-Up"></i> Upwork
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
+        <!--end of container-->
     </section>
-<div id="portfolio"></div>
-    <section>
+    <section class="masonry-contained section--overlap">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 text-center">
-                    <h3>Our Work</h3>
-                    <p class="lead">
-                        Our diverse team comprises talent from a range of design disciplines working together to deliver effective solutions
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="masonry-contained">
-        <div class="container">
-            <div class="row">
-                <div class="masonry">
-                    <div class="masonry__container masonry--active">
+                <div class="masonry box-shadow-wide">
+                    <div class="masonry__container masonry--active masonry--gapless masonry--animate">
                     {% for item in site.data.portfolioitems %}
                         <div class="col-sm-6 col-xs-12 masonry__item" data-masonry-filter="objects">
                             <div class="hover-element hover-element-1" data-title-position="center,center">
@@ -97,82 +95,14 @@ layout: default
         </div>
         <!--end of container-->
     </section>
-    <section>
-        <div class="container">
+    <section class="height-50 section--overlap bg--dark">
+        <div class="container pos-vertical-center">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="feature feature-2">
-                        <div class="feature__title">
-                            <i class="icon icon-Ship"></i>
-                            <h6>New Startups</h6>
-                        </div>
-                        <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="feature feature-2">
-                        <div class="feature__title">
-                            <i class="icon icon-Fingerprint-2"></i>
-                            <h6>Personal Portfolios</h6>
-                        </div>
-                        <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="feature feature-2">
-                        <div class="feature__title">
-                            <i class="icon icon-Shop-2"></i>
-                            <h6>Online Storefronts</h6>
-                        </div>
-                        <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
-                    </div>
-                </div>
-            </div>
-            <!--end row-->
-        </div>
-                <!--end of container-->
-    </section>
-    <section class="bg--secondary partners-1 space--sm">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="slider" data-items="6" data-timing="3000">
-                        <ul class="slides">
-                            <li>
-                                <img alt="img" src="assets/images/partner1.png">
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner2.png">
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner4.png">
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner3.png">
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner5.png">
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner6.png">
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner7.png">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg--primary space--sm cta cta-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h4>Interested in working with us?</h4>
-                    <a class="btn btn--sm" href="page-contact-form-simple.html">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <p class="lead">Interested in working with me on an upcoming project?</p>
+                    <a class="btn btn--primary" href="#">
                         <span class="btn__text">
-                            Contact Us
+                            Let's Talk 
                         </span>
                     </a>
                 </div>
@@ -181,4 +111,141 @@ layout: default
         </div>
         <!--end of container-->
     </section>
+        <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h3>Latest Blog Posts</h3>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="blog-snippet-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="card card-4">
+                            <div class="card__image">
+                                <img alt="Pic" src="img/small9.jpg" />
+                            </div>
+                            <div class="card__body boxed boxed--sm bg--white">
+                                <h6>Lifestyle</h6>
+                                <div class="card__title">
+                                    <h5>Living large in a small apartment: One man's quest to downsize</h5>
+                                </div>
+                                <hr>
+                                <div class="card__lower">
+                                    <span>by</span>
+                                    <span class="h6">Cameron Smith</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end item-->
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="card card-4">
+                            <div class="card__image">
+                                <img alt="Pic" src="img/small6.jpg" />
+                            </div>
+                            <div class="card__body boxed boxed--sm bg--white">
+                                <h6>Technology</h6>
+                                <div class="card__title">
+                                    <h5>Good photography is the key to your online presence</h5>
+                                </div>
+                                <hr>
+                                <div class="card__lower">
+                                    <span>by</span>
+                                    <span class="h6">Robin Banks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end item-->
+                <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                        <div class="card card-4">
+                            <div class="card__image">
+                                <img alt="Pic" src="img/small1.jpg" />
+                            </div>
+                            <div class="card__body boxed boxed--sm bg--white">
+                                <h6>Travel</h6>
+                                <div class="card__title">
+                                    <h5>Meet the couple who ran their online business from a tent</h5>
+                                </div>
+                                <hr>
+                                <div class="card__lower">
+                                    <span>by</span>
+                                    <span class="h6">Abby Bollard</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end item-->
+            </div>
+            <!--end of row-->
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <a class="btn" href="blog-cards-small.html">
+                        <span class="btn__text">
+                            View my blog
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+        <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h3>Technology I work with</h3>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="bg--secondary partners-1 space--sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="slider" data-items="6" data-timing="3000">
+                        <ul class="slides">
+                            <li>
+                                <img alt="img" src="assets/images/partner1.png" />
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner2.png" />
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner4.png" />
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner3.png" />
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner5.png" />
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner6.png" />
+                            </li>
+                            <li>
+                                <img alt="img" src="assets/images/partner7.png" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </div>
