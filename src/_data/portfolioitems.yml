@@ -1,14 +1,13 @@
-
 - title: Parveen Kaler
   url: http://parveenkaler.com/
   images: [parveen.png]
-  description: A personal page
+  description: Personal portfolio built with Jekyll
   features: 
 - title: Aure
   url: http://aure.com/
   images: [aure.png]
-  description: A personal portfolio built with Jekyl
-  features:  Includes custome build plugins that iterate through hundreds of files and display relvant music files.
+  description: Personal portfolio built with Jekyll
+  features:  Includes a custom plugin that iterates through hundreds of files and display relvant music files.
 - title: Adventures in Teach
   url: http://www.adventuresinteach.com/
   images: [adventeach.png]
@@ -17,15 +16,10 @@
 - title: Redcarpet Lending
   url: https://www.redcarpetup.com/
   images: [redcarpet.png]
-  description: India's first student credit card
-  features: 
+  description: Company page built with Jekyll
+  features:  
 - title: Matt Wescott Blog
   url: https://mattwescott.github.io/
   images: [mattblog.png]
-  description: A simple science blog
-  features: Features an IPython/Juyptr notebooks converter
-- title: Start Your Tab
-  url: http://startyourtab.com/
-  images: [syt.png]
-  description: Financial advice geared towards millenials
-  features: 
+  description: Jekyll Blog
+  features: converts IPython/Juyptr notebooks to markdown 

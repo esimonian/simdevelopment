@@ -14,7 +14,7 @@ layout: default
                     <p>
                         Full-stack Developer
                     </p>
-                    <a class="btn btn--primary inner-link btn--merge" href="https://github.com/esimonian" target="_blank">
+                    <a class="btn btn--primary inner-link" href="https://github.com/esimonian" target="_blank">
                         <span class="btn__text">
                             <i class="socicon-github"></i> Github
                         </span>
@@ -29,220 +29,84 @@ layout: default
         </div>
         <!--end of container-->
     </section>
-    <section class="masonry-contained section--overlap">
+    <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="masonry box-shadow-wide">
-                    <div class="masonry__container masonry--active masonry--gapless masonry--animate">
-                    {% for item in site.data.portfolioitems %}
-                        <div class="col-sm-6 col-xs-12 masonry__item" data-masonry-filter="objects">
-                            <div class="hover-element hover-element-1" data-title-position="center,center">
-                                <div class="hover-element__initial">
-                                    <img alt="Pic" src="assets/images/portfolioitems/{{item.images[0]}}" />
-                                </div>
-                                <div class="hover-element__reveal" data-overlay="9">
-                                    <div class="modal-instance">
-                                        <div class="btn-round modal-trigger">
-                                            <i class="icon-File-HorizontalText icon color--primary"></i>
-                                        </div>
-                                        <div class="modal-container">
-                                            <div class="modal-content height--natural">
-                                                <div class="card card-1">
-                                                    <div class="card__image">
-                                                        <div class="slider" data-paging="true">
-                                                            <ul class="slides">
-                                                                <li>
-                                                                    <img alt="Pic" src="assets/images/portfolioitems/{{item.images[0]}}" />
-                                                                </li>
-                                                                <li>
-                                                                    <img alt="Pic" src="assets/images/small5.jpg" />
-                                                                </li>
-                                                                <li>
-                                                                    <img alt="Pic" src="assets/images/small6.jpg" />
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card__body boxed bg--white">
-                                                        <div class="card__title">
-                                                            <a href="{{item.url}}" target="_blank"><h5>{{item.title}}</h5></a>
-                                                        </div>
-                                                        <span>
-                                                            <em>{{item.description}}</em>
-                                                        </span>
-                                                        <p>
-                                                            {{item.features}}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--end of modal-content-->
-                                        </div>
-                                        <!--end of modal-container-->
-                                    </div>
-                                    <!--end of modal instance-->
-                                </div>
-                            </div>
-                            <!--end hover element-->
-                        </div>
-                        <!--end item-->
-                    {% endfor %}
+            
+                <div class="col-sm-12">
+                    <div class="elements--title">
+                        <h4>Portfolio</h4>
                     </div>
-                    <!--end masonry container-->
                 </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
-    <section class="height-50 section--overlap bg--dark">
-        <div class="container pos-vertical-center">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 text-center">
-                    <p class="lead">Interested in working with me on an upcoming project?</p>
-                    <a class="btn btn--primary" href="#">
-                        <span class="btn__text">
-                            Let's Talk 
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
-        <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 text-center">
-                    <h3>Latest Blog Posts</h3>
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
-    <section class="blog-snippet-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
+                {% for item in site.data.portfolioitems %}
+                <div class="col-sm-12">
                     <a href="#">
-                        <div class="card card-4">
-                            <div class="card__image">
-                                <img alt="Pic" src="img/small9.jpg" />
+                        <div class="card card--horizontal card-5">
+                            <div class="card__image col-sm-7 col-md-8">
+                                <div class="background-image-holder">
+                                    <img alt="Pic" src="assets/images/portfolioitems/{{item.images[0]}}">
+                                </div>
                             </div>
-                            <div class="card__body boxed boxed--sm bg--white">
-                                <h6>Lifestyle</h6>
+                            <div class="card__body col-sm-5 col-md-4 boxed boxed--lg bg--white">
                                 <div class="card__title">
-                                    <h5>Living large in a small apartment: One man's quest to downsize</h5>
+                                    <h4>{{item.title}}</h4>
                                 </div>
-                                <hr>
-                                <div class="card__lower">
-                                    <span>by</span>
-                                    <span class="h6">Cameron Smith</span>
-                                </div>
+                                <span><em>{{item.description}}</em></span>
+                                <p>
+                                    {{item.features}}
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <!--end item-->
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <div class="card card-4">
-                            <div class="card__image">
-                                <img alt="Pic" src="img/small6.jpg" />
-                            </div>
-                            <div class="card__body boxed boxed--sm bg--white">
-                                <h6>Technology</h6>
-                                <div class="card__title">
-                                    <h5>Good photography is the key to your online presence</h5>
-                                </div>
-                                <hr>
-                                <div class="card__lower">
-                                    <span>by</span>
-                                    <span class="h6">Robin Banks</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--end item-->
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <div class="card card-4">
-                            <div class="card__image">
-                                <img alt="Pic" src="img/small1.jpg" />
-                            </div>
-                            <div class="card__body boxed boxed--sm bg--white">
-                                <h6>Travel</h6>
-                                <div class="card__title">
-                                    <h5>Meet the couple who ran their online business from a tent</h5>
-                                </div>
-                                <hr>
-                                <div class="card__lower">
-                                    <span>by</span>
-                                    <span class="h6">Abby Bollard</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--end item-->
+            {% endfor %}
             </div>
-            <!--end of row-->
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <a class="btn" href="blog-cards-small.html">
-                        <span class="btn__text">
-                            View my blog
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <!--end of row-->
         </div>
-        <!--end of container-->
     </section>
-        <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 text-center">
-                    <h3>Technology I work with</h3>
+    
+
+    <section class="height-40">
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2>Technologies I work with</h2>
+                            <span><em></em></span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
+            </section>
+       
     <section class="bg--secondary partners-1 space--sm">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="slider" data-items="6" data-timing="3000">
                         <ul class="slides">
+                            {% for tech in site.data.tech %}
                             <li>
+                            <!--
                                 <img alt="img" src="assets/images/partner1.png" />
+                            -->
+                            {{ tech.image}}
                             </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner2.png" />
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner4.png" />
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner3.png" />
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner5.png" />
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner6.png" />
-                            </li>
-                            <li>
-                                <img alt="img" src="assets/images/partner7.png" />
-                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg--primary space--sm cta cta-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h4>Interested in working together?</h4>
+                    <a class="btn btn--sm" href="mailto:esimonian16@gmail.com">
+                        <span class="btn__text">
+                            Email Me 
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
